@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61fc8c8c-dc07-4cce-81b0-6e7dc8037864" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiClientChat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/academy/mindswap/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/academy/mindswap/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/academy/mindswap/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/academy/mindswap/server/Util.java" afterDir="false" />
+    <list default="true" id="61fc8c8c-dc07-4cce-81b0-6e7dc8037864" name="Changes" comment="Multi Client Chat done version 1.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/academy/mindswap/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/mindswap/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/academy/mindswap/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/mindswap/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +36,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="academy.mindswap.server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.academy.mindswap.client.Client">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.mindswap.Main" />
       <module name="MultiClientChat" />
@@ -101,6 +91,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660739706330</updated>
     </task>
+    <task id="LOCAL-00001" summary="Multi Client Chat done version 1.0">
+      <created>1660769903192</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660769903192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,5 +111,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Multi Client Chat done version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multi Client Chat done version 1.0" />
   </component>
 </project>

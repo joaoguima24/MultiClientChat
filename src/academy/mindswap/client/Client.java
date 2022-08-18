@@ -17,13 +17,17 @@ public class Client{
 
     private String consoleReader() {
         this.consoleReader = new BufferedReader(new InputStreamReader(System.in));
-        String message;
         try {
-            message = consoleReader.readLine();
+            if (!this.socket.isClosed()){
+                return consoleReader.readLine();
+            }
+            else {
+                return "";
+            }
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return message;
     }
 
     private void connectToServer() {
@@ -38,14 +42,26 @@ public class Client{
     }
 
     private void communicateWithServer() {
-        sendMessages();
-        communicateWithServer();
+        try {
+            if (!this.socket.isClosed()){
+                sendMessages();
+                communicateWithServer();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
-    private void sendMessages() {
+    private void sendMessages() throws IOException {
         String message = consoleReader();
         sendingMessage.println(message);
         sendingMessage.flush();
+        if (message.equalsIgnoreCase("/quit")){
+            this.socket.close();
+            this.sendingMessage.close();
+            this.consoleReader.close();
+        }
     }
 
     private class ServerReader implements Runnable{
@@ -58,16 +74,19 @@ public class Client{
         @Override
         public void run() {
             try {
-                readMessage();
+                    readMessage();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
 
         private void readMessage() throws IOException {
-            String message = input.readLine();
-            System.out.println(message);
-            readMessage();
+            if (!socket.isClosed()){
+                String message = input.readLine();
+                System.out.println(message);
+                readMessage();
+            }
+
         }
     }
 }
